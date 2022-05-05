@@ -1,0 +1,161 @@
+/* 
+Color fondos: lightgoldenrodyellow 
+Color divisores: #FFE9A7
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+section{
+    border-bottom: 2px solid black;
+    background-color: lightgoldenrodyellow;
+}
+
+header section{
+    background-color: #FFE9A7;
+}
+
+div{
+}
+.texto{
+    padding: 1%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.titulo{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.redes{
+    padding: 5px;
+    height:30px;
+    width: 30px;
+}
+
+.header__logo{
+    height:50px;
+    width: 125px;   
+}
+
+.header__nav__item{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.presentacion__inicio{
+    padding: 1%;
+    height: 80%;
+    width:80%; 
+}
+
+.divisor{
+    background-color: #FFE9A7;
+    text-align: center;
+}
+
+.grid__container{
+    display: grid;
+    max-width: 100%;
+    grid-template-areas: "titulo titulo titulo"
+                        "uno dos tres"
+                        "cuatro cinco seis"
+                        "siete ocho nueve"
+    ;
+}
+
+.grid__item{
+    border: 2px red;
+    text-align: center;
+
+}
+
+.grid__titulo{
+    grid-area: titulo;
+}
+
+.grid__uno{
+    grid-area: uno;
+}
+
+.grid__dos{
+    grid-area: dos;
+}
+
+.grid__tres{
+    grid-area: tres;
+}
+
+.grid__cuatro{
+    grid-area: cuatro;
+}
+
+.grid__cinco{
+    grid-area: cinco;
+}
+
+.grid__seis{
+    grid-area: seis;
+}
+
+.grid__siete{
+    grid-area: siete;
+}
+
+.grid__ocho{
+    grid-area: ocho;
+}
+
+.grid__nueve{
+    grid-area: nueve;
+}
+
+.resumen__tarjeta{
+    padding-top: 10px;
+    border-top: 2px solid black;
+}
+
+.resumen__tarjeta__foto{
+    padding: 1%;
+    height: 35%;
+    width: 35%;
+}
+
+.footer__logo{
+    height: 20px;
+    width: 20px;
+}
+
+.imagen {
+    padding: 1%;
+    height: 35%;
+    width: 30%;
+}
+
+.video {
+    padding: 1%;
+}
+
+form {
+    padding: 1%;
+    width: fit-content;
+}
+
+form div {
+    padding: 2%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FFE9A7;
+}
+
+.titulo__contacto{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding: 1%;
+}

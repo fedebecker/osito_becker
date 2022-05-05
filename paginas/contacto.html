@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../recursos/huella.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Comienza el header, con el logotipo que direcciona al index de la pagina y la navegacion de toda la pagina -->
+    <header class="divisor">
+        <section>
+            <a>
+                <img class="redes" src="../recursos/facebook.png" alt="Facebook logo">
+            </a>
+            <a>
+                <img class="redes" src="../recursos/instagram.png" alt="Instagram logo">
+            </a>
+            <a>
+                <img class="redes" src="../recursos/twitter.png" alt="Twitter logo">
+            </a>            
+        </section>
+        <section>
+            <a href="../index.html">
+                <img class="header__logo" src="../recursos/logo.png" alt="Logotipo">
+            </a>
+            <nav class="header__nav">
+                <ul>
+                    <a class="header__nav__item" href="../index.html">Inicio</a>
+                    <a class="header__nav__item" href="servicios.html">Servicios</a>
+                    <a class="header__nav__item" href="consejos.html">Consejos</a>
+                    <a class="header__nav__item" href="sobre_osito.html">Sobre Osito</a>
+                    <a class="header__nav__item" href="contacto.html">Contacto</a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- El main con un formulario, para ingresar datos del visitante de la pagina, para dejar un comentario si asi lo desea -->
+    <main>
+        <section>
+            <div>
+                <h2 class="titulo__contacto">Contactanos</h2>
+            </div>
+            <div>
+                <form method="get">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input placeholder="Nombre...">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input placeholder="Apellido...">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input placeholder="E-mail...">
+                    </div>
+                    <div>
+                        <label for="estadocivil">Estado civil:</label>
+                        <select name="estadocivil">
+                            <option value="Casado">Casado</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Divorciado">Divorciado</option>
+                            <option value="Viudo">Viudo</option>
+                       </select>
+                    </div>
+                    <div>
+                        <label for="newsletter">¿Desea recibir el newsletter?</label>
+                        <br>
+                        <input type="radio" name="newsletter" value="Si"/>
+                        <label for="newsletter">Si</label>
+                        <input type="radio" name="newsletter" value="No"/>
+                        <label for="newsletter">No</label>
+                    </div>
+                    <div>
+                        <label for="comentarios">Su comentario nos interesa...</label>
+                        <br>
+                        <textarea name="comentarios" cols="30" rows="10"placeholder="Ingrese su comentario..."></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="politicapriv" value="Acepto"/>
+                        <label for="politicapriv">Acepto la politica de privacidad</label>
+                    </div>
+                    <div class="botones">
+                        <input type="submit" value="Enviar Formulario"/>
+                        <input type="reset" value="Limpiar Formulario"/>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <!-- Comienza el footer, con el logotipo que direcciona al index de la pagina -->
+    <footer class="divisor">
+        <section>
+            <p class="titulo">NUESTRAS REDES SOCIALES</p>
+            <img class="redes" src="../recursos/facebook.png" alt="Facebook logo">
+            <img class="redes" src="../recursos/instagram.png" alt="Instagram logo">
+            <img class="redes" src="../recursos/twitter.png" alt="Twitter logo">   
+        </section>
+        <section>
+            <a href="../index.html">
+                <img class="footer__logo" src="../recursos/o_logo.png" alt="Logotipo footer">
+            </a>         
+            <span class="texto">Todos los derechos reservados</span>
+        </section>
+    </footer>
+</body>
+</html>
