@@ -8,35 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Osito</title>
 </head>
 <body>
     <!-- Comienza el header, con el logotipo que direcciona al index de la pagina y la navegacion de toda la pagina -->
     <header>
-        <section class="divisor">
-            <a>
-                <img class="redes" src="recursos/facebook.png" alt="Facebook logo">
-            </a>
-            <a>
-                <img class="redes" src="recursos/instagram.png" alt="Instagram logo">
-            </a>
-            <a>
-                <img class="redes" src="recursos/twitter.png" alt="Twitter logo">
-            </a>            
-        </section>
-        <section class="divisor">
-            <a href="index.html">
-                <img class="header__logo" src="recursos/logo.png" alt="Logotipo">
-            </a>
+        <section>
             <nav class="header__nav">
-                <ul>
-                    <a class="header__nav__item" href="index.html">Inicio</a>
-                    <a class="header__nav__item" href="paginas/servicios.html">Servicios</a>
-                    <a class="header__nav__item" href="paginas/consejos.html">Consejos</a>
-                    <a class="header__nav__item" href="paginas/sobre_osito.html">Sobre Osito</a>
-                    <a class="header__nav__item" href="paginas/contacto.html">Contacto</a>
+                <a href="index.html" class="header__logo__position">
+                    <img class="header__logo" src="recursos/logo.png" alt="Logotipo">
+                </a>
+                <ul class="nav__menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="paginas/servicios.html">Servicios</a></li>
+                    <li><a href="paginas/consejos.html">Consejos</a></li>
+                    <li><a href="paginas/sobre_osito.html">Sobre Osito</a></li>
+                    <li><a href="paginas/contacto.html">Contacto</a></li>
                 </ul>
+                <div class="nav__redes">
+                    <a>
+                        <img class="logo__auxiliar__redes" src="recursos/facebook.png" alt="Facebook logo">
+                    </a>
+                    <a>
+                        <img class="logo__auxiliar__redes" src="recursos/instagram.png" alt="Instagram logo">
+                    </a>
+                    <a>
+                        <img class="logo__auxiliar__redes" src="recursos/twitter.png" alt="Twitter logo">
+                    </a>            
+                </div>
             </nav>
         </section>
     </header>
@@ -50,21 +51,6 @@
                 </p>               
             </div>
         </section>
-        <section class="grid__container">
-            <div class="grid__item grid__titulo">
-                <h2 class="titulo">¿En que ositomood te encontras hoy?</h2>
-            </div>
-            <div class="grid__item grid__uno"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__dos"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__tres"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__cuatro"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__cinco"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__seis"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__siete"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__ocho"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-            <div class="grid__item grid__nueve"><img src="recursos/ejemplo_mood.jpg" alt="ejemplo uno"></div>
-
-        </section>
         <section class="presentacion">
             <div>
                 <img class="presentacion__inicio" src="recursos/fotosito.jpg" alt="Foto incial osito">
@@ -73,8 +59,9 @@
                 </p> 
             </div>
         </section>
-        <section>
-            <h3 class="divisor">Conoce toda la historia de osito</h3>
+        <section class="divisor">
+            <h3>Conoce toda la historia de osito</h3>
+            <button class="boton__divisor"><a href="paginas/sobre_osito.html">Quiero ver</a></button>
         </section>
         <section class="resumen">
             <div class="resumen__tarjeta">
@@ -99,18 +86,20 @@
     </main>
     <!-- Comienza el footer, con el logotipo que direcciona al index de la pagina -->
     <footer>
-        <section class="divisor">
-            <p class="titulo">NUESTRAS REDES SOCIALES</p>
-            <img class="redes" src="recursos/facebook.png" alt="Facebook logo">
-            <img class="redes" src="recursos/instagram.png" alt="Instagram logo">
-            <img class="redes" src="recursos/twitter.png" alt="Twitter logo">   
-        </section>
-        <section class="divisor">
+        <div class="footer__logo__position">
             <a href="index.html">
                 <img class="footer__logo" src="recursos/o_logo.png" alt="Logotipo footer">
             </a>         
+        </div>
+        <div class="footer__derechos">
             <span class="texto">Todos los derechos reservados</span>
-        </section>
+        </div>
+        <div class="footer__redes">
+            <p class="titulo">NUESTRAS REDES SOCIALES:</p>
+            <img class="logo__auxiliar__redes" src="recursos/facebook.png" alt="Facebook logo">
+            <img class="logo__auxiliar__redes" src="recursos/instagram.png" alt="Instagram logo">
+            <img class="logo__auxiliar__redes" src="recursos/twitter.png" alt="Twitter logo">   
+        </div>
     </footer>
 </body>
 </html>

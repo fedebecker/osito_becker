@@ -70,52 +70,6 @@ div{
     ;
 }
 
-.grid__item{
-    border: 2px red;
-    text-align: center;
-
-}
-
-.grid__titulo{
-    grid-area: titulo;
-}
-
-.grid__uno{
-    grid-area: uno;
-}
-
-.grid__dos{
-    grid-area: dos;
-}
-
-.grid__tres{
-    grid-area: tres;
-}
-
-.grid__cuatro{
-    grid-area: cuatro;
-}
-
-.grid__cinco{
-    grid-area: cinco;
-}
-
-.grid__seis{
-    grid-area: seis;
-}
-
-.grid__siete{
-    grid-area: siete;
-}
-
-.grid__ocho{
-    grid-area: ocho;
-}
-
-.grid__nueve{
-    grid-area: nueve;
-}
-
 .resumen__tarjeta{
     padding-top: 10px;
     border-top: 2px solid black;

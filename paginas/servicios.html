@@ -8,35 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Servicios</title>
 </head>
 <body>
     <!-- Comienza el header, con el logotipo que direcciona al index de la pagina y la navegacion de toda la pagina -->
-    <header class="divisor">
+    <header>
         <section>
-            <a>
-                <img class="redes" src="../recursos/facebook.png" alt="Facebook logo">
-            </a>
-            <a>
-                <img class="redes" src="../recursos/instagram.png" alt="Instagram logo">
-            </a>
-            <a>
-                <img class="redes" src="../recursos/twitter.png" alt="Twitter logo">
-            </a>            
-        </section>
-        <section>
-            <a href="../index.html">
-                <img class="header__logo" src="../recursos/logo.png" alt="Logotipo">
-            </a>
             <nav class="header__nav">
-                <ul>
-                    <a class="header__nav__item" href="../index.html">Inicio</a>
-                    <a class="header__nav__item" href="servicios.html">Servicios</a>
-                    <a class="header__nav__item" href="consejos.html">Consejos</a>
-                    <a class="header__nav__item" href="sobre_osito.html">Sobre Osito</a>
-                    <a class="header__nav__item" href="contacto.html">Contacto</a>
+                <a href="../index.html" class="header__logo__position">
+                    <img class="header__logo" src="../recursos/logo.png" alt="Logotipo">
+                </a>
+                <ul class="nav__menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="sobre_osito.html">Sobre Osito</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
+                <div class="nav__redes">
+                    <a>
+                        <img class="logo__auxiliar__redes" src="../recursos/facebook.png" alt="Facebook logo">
+                    </a>
+                    <a>
+                        <img class="logo__auxiliar__redes" src="../recursos/instagram.png" alt="Instagram logo">
+                    </a>
+                    <a>
+                        <img class="logo__auxiliar__redes" src="../recursos/twitter.png" alt="Twitter logo">
+                    </a>            
+                </div>
             </nav>
         </section>
     </header>
@@ -72,19 +72,21 @@
         </section>
     </main>
     <!-- Comienza el footer, con el logotipo que direcciona al index de la pagina -->
-    <footer class="divisor">
-        <section>
-            <p class="titulo">NUESTRAS REDES SOCIALES</p>
-            <img class="redes" src="../recursos/facebook.png" alt="Facebook logo">
-            <img class="redes" src="../recursos/instagram.png" alt="Instagram logo">
-            <img class="redes" src="../recursos/twitter.png" alt="Twitter logo">   
-        </section>
-        <section>
+    <footer>
+        <div class="footer__logo__position">
             <a href="../index.html">
                 <img class="footer__logo" src="../recursos/o_logo.png" alt="Logotipo footer">
             </a>         
+        </div>
+        <div class="footer__derechos">
             <span class="texto">Todos los derechos reservados</span>
-        </section>
+        </div>
+        <div class="footer__redes">
+            <p class="titulo">NUESTRAS REDES SOCIALES:</p>
+            <img class="logo__auxiliar__redes" src="../recursos/facebook.png" alt="Facebook logo">
+            <img class="logo__auxiliar__redes" src="../recursos/instagram.png" alt="Instagram logo">
+            <img class="logo__auxiliar__redes" src="../recursos/twitter.png" alt="Twitter logo">   
+        </div>
     </footer>
 </body>
 </html>
