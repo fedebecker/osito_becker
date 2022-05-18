@@ -70,22 +70,63 @@ main {
     background-color: lightgoldenrodyellow;
 }
 
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.15em solid black;
+}
+
 .texto {
     padding: 1%;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.imagen {
+    width: 180px;
+    height: 160px;
+}
+
+.contenedor__tarjetas {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.tarjeta {
+    display: flex;
+    margin-top: 5%;
 }
 
 .titulo {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: bold;
     text-align: center;
-    padding-top: 1%;
+    font-size: 1.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.25em;
 }
 
-.imagen {
-    padding: 1%;
-    height: 35%;
-    width: 30%;
+.margen {
+    padding: 2em;
+}
+
+.titulo__inicial {
+    text-decoration: underline;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.25em;
+}
+
+.texto {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .video {
@@ -140,8 +181,8 @@ form {
     background-color: white;
     margin: auto;
     width: 90%;
-    max-width: 400px;
-    padding: 4.5em 3em;
+    max-width: 500px;
+    padding: 2em 2em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
     text-align: left;
@@ -271,6 +312,16 @@ footer {
         grid-row: 1/1;
         justify-content: flex-end;
     }
+
+    .contenedor__tarjetas {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tarjeta {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
     .footer__redes .titulo {
         display: none;
@@ -299,6 +350,16 @@ footer {
         grid-column: 13/15; 
     }
 
+    .contenedor__tarjetas {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tarjeta {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .footer__redes .titulo {
         display: none;
     }

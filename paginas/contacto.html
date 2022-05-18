@@ -45,59 +45,61 @@
     </header>
     <!-- El main con un formulario, para ingresar datos del visitante de la pagina, para dejar un comentario si asi lo desea -->
     <main>
-        <section>
-            <form method="get">
-                <h2 class="titulo__contacto">Contactanos</h2>
-                <div class="form__contenedor">
-                    <div class="form__parte">
-                        <label for="nombre" class="form__label">Nombre:</label>
-                        <input placeholder="Nombre..." class="form__input">
-                        <span class="form__linea"></span>
+        <section class="container-fluid margen">
+            <div class="col">
+                <form method="get">
+                    <h2 class="titulo__contacto">Contactanos</h2>
+                    <div class="form__contenedor">
+                        <div class="form__parte">
+                            <label for="nombre" class="form__label">Nombre:</label>
+                            <input placeholder="Nombre..." class="form__input">
+                            <span class="form__linea"></span>
+                        </div>
+                        <div class="form__parte">
+                            <label for="apellido" class="form__label">Apellido:</label>
+                            <input placeholder="Apellido..." class="form__input">
+                            <span class="form__linea"></span>
+                        </div>
+                        <div class="form__parte">
+                            <label for="email" class="form__label">E-mail:</label>
+                            <input placeholder="E-mail..." class="form__input">
+                            <span class="form__linea"></span>
+                        </div>
+                        <div class="form__parte">
+                            <label for="estadocivil" class="form__label">Estado civil:</label>
+                            <select name="estadocivil" class="input__seleccion">
+                                <option value="Casado">Casado</option>
+                                <option value="Soltero">Soltero</option>
+                                <option value="Divorciado">Divorciado</option>
+                                <option value="Viudo">Viudo</option>
+                           </select>
+                           <span class="form__linea"></span>
+                        </div>
+                        <div class="form__parte form__seleccion">
+                            <label for="newsletter" class="form__label">¿Desea recibir el newsletter?</label>
+                            <input type="radio" name="newsletter" value="Si" class="input__seleccion"/>
+                            <label for="newsletter" class="form__label">Si</label>
+                            <input type="radio" name="newsletter" value="No" class="input__seleccion"/>
+                            <label for="newsletter" class="form__label">No</label>
+                            <span class="form__linea"></span>
+                        </div>
+                        <div class="form__parte">
+                            <label for="comentarios" class="form__label">Su comentario nos interesa...</label>
+                            <textarea name="comentarios" cols="30" rows="10"placeholder="Ingrese su comentario..."></textarea>
+                            <span class="form__linea"></span>
+                        </div>
+                        <div class="form__parte form__seleccion">
+                            <label for="politicapriv" class="form__label">Acepto la politica de privacidad</label>
+                            <input type="checkbox" name="politicapriv" value="Acepto" class="input__seleccion"/>
+                            <span class="form__linea"></span>
+                        </div>
+                        <div class="botones">
+                            <input type="submit" value="Enviar Formulario" class="form__submit"/>
+                            <input type="reset" value="Limpiar Formulario" class="form__submit"/>
+                        </div>
                     </div>
-                    <div class="form__parte">
-                        <label for="apellido" class="form__label">Apellido:</label>
-                        <input placeholder="Apellido..." class="form__input">
-                        <span class="form__linea"></span>
-                    </div>
-                    <div class="form__parte">
-                        <label for="email" class="form__label">E-mail:</label>
-                        <input placeholder="E-mail..." class="form__input">
-                        <span class="form__linea"></span>
-                    </div>
-                    <div class="form__parte">
-                        <label for="estadocivil" class="form__label">Estado civil:</label>
-                        <select name="estadocivil" class="input__seleccion">
-                            <option value="Casado">Casado</option>
-                            <option value="Soltero">Soltero</option>
-                            <option value="Divorciado">Divorciado</option>
-                            <option value="Viudo">Viudo</option>
-                       </select>
-                       <span class="form__linea"></span>
-                    </div>
-                    <div class="form__parte form__seleccion">
-                        <label for="newsletter" class="form__label">¿Desea recibir el newsletter?</label>
-                        <input type="radio" name="newsletter" value="Si" class="input__seleccion"/>
-                        <label for="newsletter" class="form__label">Si</label>
-                        <input type="radio" name="newsletter" value="No" class="input__seleccion"/>
-                        <label for="newsletter" class="form__label">No</label>
-                        <span class="form__linea"></span>
-                    </div>
-                    <div class="form__parte">
-                        <label for="comentarios" class="form__label">Su comentario nos interesa...</label>
-                        <textarea name="comentarios" cols="30" rows="10"placeholder="Ingrese su comentario..."></textarea>
-                        <span class="form__linea"></span>
-                    </div>
-                    <div class="form__parte form__seleccion">
-                        <label for="politicapriv" class="form__label">Acepto la politica de privacidad</label>
-                        <input type="checkbox" name="politicapriv" value="Acepto" class="input__seleccion"/>
-                        <span class="form__linea"></span>
-                    </div>
-                    <div class="botones">
-                        <input type="submit" value="Enviar Formulario" class="form__submit"/>
-                        <input type="reset" value="Limpiar Formulario" class="form__submit"/>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </section>
 
     </main>
