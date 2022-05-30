@@ -1,0 +1,57 @@
+
+/* Estilos para el header */
+header {
+    border-bottom: 2px solid black;
+
+    .header {
+        &__nav {
+            background-color: $color-secundario;
+            display: grid;
+            grid-template-columns: repeat(16,1fr);
+            align-items: center;
+        }
+        
+        &__logo__position {
+            grid-column: 2/3;   
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        &__logo {
+            height:60px;
+            width: 150px;
+        }
+        
+        &__nav {
+            background-color: $color-secundario;
+            display: grid;
+            grid-template-columns: repeat(16,1fr);
+            align-items: center;
+        }
+    }
+}
+
+.nav {
+    &__menu {
+        grid-column: 4/13;
+        display: flex;
+        justify-content:center;
+
+        & li{
+            list-style: none;
+            padding-right: 2%;
+            font-family: $font-principal;
+        }
+    }
+
+    &__redes {
+        grid-column: 14/17;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__logo__menu {
+        display: none;
+    }
+
+}

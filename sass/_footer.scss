@@ -1,0 +1,44 @@
+
+/* Estilos para el footer */
+
+footer {
+    background-color: $color-secundario;
+    border-top: 2px solid black;
+    display: grid;    
+    grid-template-columns: repeat(14,1fr);
+    align-items: center;
+
+    .footer {
+        &__logo__position {
+            grid-column: 2/3;   
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        &__logo {
+            height:60px;
+            width:60px;
+        }
+    
+        &__derechos {
+            grid-column: 4/10;
+            display: flex;
+            justify-content:space-around;
+        }
+    
+        &__redes {
+            grid-column: 10/14;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            &__titulo {
+                font-family: $font-principal;
+                font-weight: bold;
+                text-align: center;
+                font-size: 1em;
+                padding-top: 0.25em;
+            }
+        }
+    }
+}

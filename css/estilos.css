@@ -1,11 +1,7 @@
 /* 
-Color fondos: lightgoldenrodyellow 
-Color divisores: #FFE9A7
+Color fondos: $color-principal 
+Color divisores: $color-secundario
 */
-* {
-  margin: 0;
-  padding: 0; }
-
 /* Estilos para el header */
 header {
   border-bottom: 2px solid black; }
@@ -34,7 +30,7 @@ header {
   .nav__menu li {
     list-style: none;
     padding-right: 2%;
-    font-family: 'Plus Jakarta Sans', sans-serif; }
+    font-family: "Plus Jakarta Sans", sans-serif; }
 
 .nav__redes {
   grid-column: 14/17;
@@ -43,184 +39,6 @@ header {
 
 .nav__logo__menu {
   display: none; }
-
-.logo__auxiliar__redes {
-  padding: 5px;
-  height: 35px;
-  width: 35px; }
-
-a {
-  text-decoration: none;
-  color: black; }
-
-/* Estilos para el main */
-main {
-  background-color: lightgoldenrodyellow; }
-
-.portada {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 0.15em solid black; }
-
-.texto {
-  padding: 1%;
-  font-family: 'Plus Jakarta Sans', sans-serif; }
-
-.imagen {
-  width: 180px;
-  height: 160px; }
-
-.contenedor__tarjetas {
-  width: 75%;
-  margin: auto;
-  padding-bottom: 2em; }
-
-.tarjeta {
-  display: flex;
-  margin-top: 5%; }
-
-.titulo {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 0.25em; }
-
-.margen {
-  padding: 2em; }
-
-.titulo__inicial {
-  text-decoration: underline;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.75em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.25em; }
-
-.texto {
-  font-size: 1.5em;
-  padding-left: 1em;
-  padding-right: 1em; }
-
-.video {
-  padding: 1%; }
-
-.presentacion__inicio {
-  padding: 1%;
-  height: 80%;
-  width: 80%; }
-
-.divisor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1%;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: #FFE9A7;
-  border-top: 2px solid black; }
-
-.boton__divisor {
-  border-radius: 3px;
-  border-color: #f8d773;
-  display: inline-block;
-  text-decoration: none;
-  padding: 5px 10px;
-  margin-left: 1%;
-  color: black;
-  background-color: #f8d773;
-  box-shadow: 1px 1px black;
-  font-family: 'Plus Jakarta Sans', sans-serif; }
-
-.boton__divisor:hover {
-  transform: scale(1.1); }
-
-.resumen__tarjeta {
-  padding-top: 10px;
-  border-top: 2px solid black; }
-
-.resumen__tarjeta__foto {
-  padding: 1%;
-  height: 35%;
-  width: 35%; }
-
-a h3:hover {
-  transform: scale(1.2);
-  color: black;
-  margin-left: 1em; }
-
-.texto .aumento:hover {
-  font-size: 1.1em; }
-
-.alineacion {
-  margin-top: 4.5em; }
-
-form {
-  background-color: white;
-  margin: auto;
-  width: 90%;
-  max-width: 500px;
-  padding: 2em 2em;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px -5px 000000;
-  text-align: left; }
-  form .form__contenedor {
-    margin-top: 2em;
-    display: grid;
-    gap: 1.5em; }
-  form .form__parte {
-    position: relative;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: #5757577e; }
-  form .form__seleccion {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 1em; }
-  form .form__input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #5757577e; }
-  form .form__submit {
-    background: #FFE9A7;
-    color: black;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 0.8em 1em;
-    margin-bottom: 0.5em;
-    border: none;
-    border-radius: 0.5em; }
-  form .form__linea {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #f8d773;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 0.4s; }
-
-.titulo_contacto {
-  font-size: 2rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  margin-bottom: 0.5em; }
-
-.form__input:focus ~ .form__linea,
-.form__input:not(:placeholder-shown) ~ .form__linea {
-  transform: scale(1); }
 
 /* Estilos para el footer */
 footer {
@@ -246,7 +64,7 @@ footer {
     justify-content: space-around;
     align-items: center; }
     footer .footer__redes__titulo {
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: "Plus Jakarta Sans", sans-serif;
       font-weight: bold;
       text-align: center;
       font-size: 1em;
@@ -295,3 +113,183 @@ footer {
     justify-content: center; }
   .footer__redes .titulo {
     display: none; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.logo__auxiliar__redes {
+  padding: 5px;
+  height: 35px;
+  width: 35px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+/* Estilos para el main */
+main {
+  background-color: lightgoldenrodyellow; }
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.15em solid black; }
+
+.texto {
+  padding: 1%;
+  font-family: "Plus Jakarta Sans", sans-serif; }
+
+.imagen {
+  width: 180px;
+  height: 160px; }
+
+.contenedor__tarjetas {
+  width: 75%;
+  margin: auto;
+  padding-bottom: 2em; }
+
+.tarjeta {
+  display: flex;
+  margin-top: 5%; }
+
+.titulo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.25em; }
+
+.margen {
+  padding: 2em; }
+
+.titulo__inicial {
+  text-decoration: underline;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.25em; }
+
+.texto {
+  font-size: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.video {
+  padding: 1%; }
+
+.presentacion__inicio {
+  padding: 1%;
+  height: 80%;
+  width: 80%; }
+
+.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #FFE9A7;
+  border-top: 2px solid black; }
+
+.boton__divisor {
+  border-radius: 3px;
+  border-color: #f8d773;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 1%;
+  color: black;
+  background-color: #f8d773;
+  box-shadow: 1px 1px black;
+  font-family: "Plus Jakarta Sans", sans-serif; }
+  .boton__divisor:hover {
+    transform: scale(1.1); }
+
+.resumen__tarjeta {
+  padding-top: 10px;
+  border-top: 2px solid black; }
+  .resumen__tarjeta__foto {
+    padding: 1%;
+    height: 35%;
+    width: 35%; }
+
+a h3:hover {
+  transform: scale(1.2);
+  color: black;
+  margin-left: 1em; }
+
+.texto .aumento:hover {
+  font-size: 1.1em; }
+
+.alineacion {
+  margin-top: 4.5em; }
+
+form {
+  background-color: white;
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 2em 2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px 000000;
+  text-align: left; }
+  form .form__contenedor {
+    margin-top: 2em;
+    display: grid;
+    gap: 1.5em; }
+  form .form__parte {
+    position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #5757577e; }
+  form .form__seleccion {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em; }
+  form .form__input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e; }
+  form .form__submit {
+    background: #FFE9A7;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 0.5em; }
+  form .form__linea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f8d773;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform 0.4s; }
+
+.titulo_contacto {
+  font-size: 2rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 0.5em; }
+
+.form__input:focus ~ .form__linea,
+.form__input:not(:placeholder-shown) ~ .form__linea {
+  transform: scale(1); }
