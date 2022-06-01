@@ -4,6 +4,7 @@ Color divisores: $color-secundario
 */
 @import 'variables';
 @import 'header';
+@import 'formulario';
 @import 'footer';
 @import 'mediaqueries';
 
@@ -24,6 +25,11 @@ a {
     color: black;
 }
 
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
 
 /* Estilos para el main */
 
@@ -36,7 +42,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 0.15em solid black;
+    border-bottom: $size*0.15 solid black;
 }
 
 .texto {
@@ -52,7 +58,7 @@ main {
 .contenedor__tarjetas {
     width: 75%;
     margin: auto;
-    padding-bottom: 2em;
+    padding-bottom: $size*2;
 }
 
 .tarjeta {
@@ -64,14 +70,14 @@ main {
     font-family: $font-principal;
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 0.25em;
+    font-size: $size*1.75;
+    padding-left: $size;
+    padding-right: $size;
+    padding-bottom: $size*0.25;
 }
 
 .margen {
-    padding: 2em;
+    padding: $size*2;
 }
 
 .titulo__inicial {
@@ -79,16 +85,16 @@ main {
     font-family: $font-principal;
     font-weight: bold;
     text-align: center;
-    font-size: 1.75em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.25em;
+    font-size: $size*2;
+    padding-left: $size;
+    padding-right: $size;
+    padding-top: $size*0.25;
 }
 
 .texto {
-    font-size: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    font-size: $size*1.5;
+    padding-left: $size;
+    padding-right: $size;
 }
 
 .video {
@@ -111,6 +117,10 @@ main {
     border-top: 2px solid black; 
 }
 
+@mixin aumento($aumento) {
+    transform: scale($aumento);
+}
+
 .boton__divisor {
     border-radius: 3px;
     border-color: $color-detalles;
@@ -123,7 +133,7 @@ main {
     box-shadow: 1px 1px black;
     font-family: $font-principal;
     &:hover {
-        transform: scale(1.1);
+        @include aumento(1.1);
     }
 }
 
@@ -138,96 +148,18 @@ main {
 }
 
 a h3:hover {
-    transform: scale(1.2);
+    @include aumento(1.2);
     color: black;
-    margin-left: 1em;
+    margin-left: $size;
 }
 
 .texto .aumento:hover{
-    font-size: 1.1em;
+    font-size: $size*1.1;
+    color:black;
 }
 
 .alineacion {
-    margin-top: 4.5em;
+    margin-top: $size*4.5;
 }
 
-form {
-    background-color: white;
-    margin: auto;
-    width: 90%;
-    max-width: 500px;
-    padding: 2em 2em;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px 000000;
-    text-align: left;
 
-    .form {
-
-        &__contenedor {
-            margin-top: 2em;
-            display: grid;
-            gap: 1.5em;
-        }
-    
-        &__parte {
-            position: relative;
-            font-family: $font-principal;
-            color: #5757577e;
-        }
-    
-        &__seleccion {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            gap: 1em;
-        }
-    
-        &__input {
-            width: 100%;
-            background: none;
-            color: #706c6c;
-            font-family: $font-principal;
-            font-size: 1rem;
-            padding: 0.6em 0.3em;
-            border: none;
-            outline: none;
-            border-bottom: 1px solid #5757577e;
-        }
-    
-        &__submit {
-            background: $color-secundario;
-            color: black;
-            font-family: $font-principal;
-            font-weight: 300;
-            font-size: 1rem;
-            padding: 0.8em 1em;
-            margin-bottom: 0.5em;
-            border: none;
-            border-radius: 0.5em;
-        }
-    
-        &__linea {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: $color-detalles;
-            transform: scale(0);
-            transform: left bottom;
-            transition: transform 0.4s;
-        }
-    }
-
-}
-
-.titulo_contacto {
-    font-size: 2rem;
-    font-family: $font-principal;
-    margin-bottom: 0.5em;
-}
-
-.form__input:focus ~ .form__linea,
-.form__input:not(:placeholder-shown) ~ .form__linea {
-    transform: scale(1);
-}

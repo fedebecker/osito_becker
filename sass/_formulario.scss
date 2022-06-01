@@ -1,0 +1,82 @@
+// Estilos para los formularios
+
+form {
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    padding: $size*2 $size*2;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px 000000;
+    text-align: left;
+
+    .form {
+
+        &__contenedor {
+            margin-top: $size*2;
+            display: grid;
+            gap: $size*1.5;
+        }
+    
+        &__parte {
+            position: relative;
+            font-family: $font-principal;
+            color: #5757577e;
+        }
+    
+        &__seleccion {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: $size;
+        }
+    
+        &__input {
+            width: 100%;
+            background: none;
+            color: #706c6c;
+            font-family: $font-principal;
+            font-size: 1rem;
+            padding: $size*0.6 $size*0.3;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #5757577e;
+        }
+    
+        &__submit {
+            background: $color-secundario;
+            color: black;
+            font-family: $font-principal;
+            font-weight: 300;
+            font-size: 1rem;
+            padding: $size*0.8 $size;
+            margin-bottom: $size*0.5;
+            border: none;
+            border-radius: $size*0.5;
+        }
+    
+        &__linea {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $color-detalles;
+            transform: scale(0);
+            transform: left bottom;
+            transition: transform 0.4s;
+        }
+    }
+
+}
+
+.titulo_contacto {
+    font-size: 2rem;
+    font-family: $font-principal;
+    margin-bottom: $size*0.5;
+}
+
+.form__input:focus ~ .form__linea,
+.form__input:not(:placeholder-shown) ~ .form__linea {
+    transform: scale(1);
+}

@@ -40,6 +40,68 @@ header {
 .nav__logo__menu {
   display: none; }
 
+form {
+  background-color: white;
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 2em 2em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px 000000;
+  text-align: left; }
+  form .form__contenedor {
+    margin-top: 2em;
+    display: grid;
+    gap: 1.5em; }
+  form .form__parte {
+    position: relative;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #5757577e; }
+  form .form__seleccion {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em; }
+  form .form__input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #5757577e; }
+  form .form__submit {
+    background: #FFE9A7;
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 0.5em; }
+  form .form__linea {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f8d773;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform 0.4s; }
+
+.titulo_contacto {
+  font-size: 2rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-bottom: 0.5em; }
+
+.form__input:focus ~ .form__linea,
+.form__input:not(:placeholder-shown) ~ .form__linea {
+  transform: scale(1); }
+
 /* Estilos para el footer */
 footer {
   background-color: #FFE9A7;
@@ -127,6 +189,10 @@ a {
   text-decoration: none;
   color: black; }
 
+a:hover {
+  color: black;
+  font-weight: bold; }
+
 /* Estilos para el main */
 main {
   background-color: lightgoldenrodyellow; }
@@ -159,7 +225,7 @@ main {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.75em;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 0.25em; }
@@ -172,7 +238,7 @@ main {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 1.75em;
+  font-size: 2em;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.25em; }
@@ -227,69 +293,8 @@ a h3:hover {
   margin-left: 1em; }
 
 .texto .aumento:hover {
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  color: black; }
 
 .alineacion {
   margin-top: 4.5em; }
-
-form {
-  background-color: white;
-  margin: auto;
-  width: 90%;
-  max-width: 500px;
-  padding: 2em 2em;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px -5px 000000;
-  text-align: left; }
-  form .form__contenedor {
-    margin-top: 2em;
-    display: grid;
-    gap: 1.5em; }
-  form .form__parte {
-    position: relative;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: #5757577e; }
-  form .form__seleccion {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 1em; }
-  form .form__input {
-    width: 100%;
-    background: none;
-    color: #706c6c;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 1rem;
-    padding: 0.6em 0.3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #5757577e; }
-  form .form__submit {
-    background: #FFE9A7;
-    color: black;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: 0.8em 1em;
-    margin-bottom: 0.5em;
-    border: none;
-    border-radius: 0.5em; }
-  form .form__linea {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #f8d773;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform 0.4s; }
-
-.titulo_contacto {
-  font-size: 2rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  margin-bottom: 0.5em; }
-
-.form__input:focus ~ .form__linea,
-.form__input:not(:placeholder-shown) ~ .form__linea {
-  transform: scale(1); }

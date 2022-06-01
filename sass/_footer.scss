@@ -36,8 +36,8 @@ footer {
                 font-family: $font-principal;
                 font-weight: bold;
                 text-align: center;
-                font-size: 1em;
-                padding-top: 0.25em;
+                font-size: $size;
+                padding-top: $size*0.25;
             }
         }
     }
