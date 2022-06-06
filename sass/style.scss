@@ -40,30 +40,33 @@ main {
 .portada {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
     border-bottom: $size*0.15 solid black;
 }
 
-.texto {
-    padding: 1%;
-    font-family: $font-principal;
-}
 
 .imagen {
     width: 180px;
     height: 160px;
 }
 
+.imagen_osito {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+
 .contenedor__tarjetas {
-    width: 75%;
+    width: 80%;
     margin: auto;
     padding-bottom: $size*2;
 }
 
 .tarjeta {
     display: flex;
-    margin-top: 5%;
+    margin-top: 15px;
 }
 
 .titulo {
@@ -88,13 +91,15 @@ main {
     font-size: $size*2;
     padding-left: $size;
     padding-right: $size;
-    padding-top: $size*0.25;
+    // padding-top: $size*0.25;
 }
 
 .texto {
+    padding: 1%;
     font-size: $size*1.5;
     padding-left: $size;
     padding-right: $size;
+    font-family: $font-principal;
 }
 
 .video {

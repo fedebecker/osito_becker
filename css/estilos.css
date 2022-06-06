@@ -200,26 +200,27 @@ main {
 .portada {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
   border-bottom: 0.15em solid black; }
-
-.texto {
-  padding: 1%;
-  font-family: "Plus Jakarta Sans", sans-serif; }
 
 .imagen {
   width: 180px;
   height: 160px; }
 
+.imagen_osito {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 10px; }
+
 .contenedor__tarjetas {
-  width: 75%;
+  width: 80%;
   margin: auto;
   padding-bottom: 2em; }
 
 .tarjeta {
   display: flex;
-  margin-top: 5%; }
+  margin-top: 15px; }
 
 .titulo {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -240,13 +241,14 @@ main {
   text-align: center;
   font-size: 2em;
   padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.25em; }
+  padding-right: 1em; }
 
 .texto {
+  padding: 1%;
   font-size: 1.5em;
   padding-left: 1em;
-  padding-right: 1em; }
+  padding-right: 1em;
+  font-family: "Plus Jakarta Sans", sans-serif; }
 
 .video {
   padding: 1%; }
